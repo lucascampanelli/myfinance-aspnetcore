@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "myfinance-aspnetcore/1.0.0": {
+        "runtime": {
+          "myfinance-aspnetcore.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "myfinance-aspnetcore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
