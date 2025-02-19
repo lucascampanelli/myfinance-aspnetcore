@@ -3,6 +3,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+// Constrói p contêiner da aplicação
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -13,9 +14,13 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+// Redireciona para o HTTPS
 app.UseHttpsRedirection();
+
+// Utiliza arquivos estáticos, permitindo o acesso ao "wwwroot"
 app.UseStaticFiles();
 
+// Utiliza roteamento
 app.UseRouting();
 
 app.UseAuthorization();
@@ -24,4 +29,5 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+// Sobe a aplicação
 app.Run();

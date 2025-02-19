@@ -1,0 +1,12 @@
+M:\myfinance-aspnetcore\3-myfinance-aspnetcore-domain\bin\Debug\net8.0\3-myfinance-aspnetcore-domain.deps.json
+M:\myfinance-aspnetcore\3-myfinance-aspnetcore-domain\bin\Debug\net8.0\3-myfinance-aspnetcore-domain.dll
+M:\myfinance-aspnetcore\3-myfinance-aspnetcore-domain\bin\Debug\net8.0\3-myfinance-aspnetcore-domain.pdb
+M:\myfinance-aspnetcore\3-myfinance-aspnetcore-domain\obj\Debug\net8.0\3-myfinance-aspnetcore-domain.GeneratedMSBuildEditorConfig.editorconfig
+M:\myfinance-aspnetcore\3-myfinance-aspnetcore-domain\obj\Debug\net8.0\3-myfinance-aspnetcore-domain.AssemblyInfoInputs.cache
+M:\myfinance-aspnetcore\3-myfinance-aspnetcore-domain\obj\Debug\net8.0\3-myfinance-aspnetcore-domain.AssemblyInfo.cs
+M:\myfinance-aspnetcore\3-myfinance-aspnetcore-domain\obj\Debug\net8.0\3-myfinance-aspnetcore-domain.csproj.CoreCompileInputs.cache
+M:\myfinance-aspnetcore\3-myfinance-aspnetcore-domain\obj\Debug\net8.0\3-myfinance-aspnetcore-domain.sourcelink.json
+M:\myfinance-aspnetcore\3-myfinance-aspnetcore-domain\obj\Debug\net8.0\3-myfinance-aspnetcore-domain.dll
+M:\myfinance-aspnetcore\3-myfinance-aspnetcore-domain\obj\Debug\net8.0\refint\3-myfinance-aspnetcore-domain.dll
+M:\myfinance-aspnetcore\3-myfinance-aspnetcore-domain\obj\Debug\net8.0\3-myfinance-aspnetcore-domain.pdb
+M:\myfinance-aspnetcore\3-myfinance-aspnetcore-domain\obj\Debug\net8.0\ref\3-myfinance-aspnetcore-domain.dll

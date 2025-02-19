@@ -1,0 +1,12 @@
+M:\myfinance-aspnetcore\4-myfinance-aspnetcore-infra\bin\Debug\net8.0\4-myfinance-aspnetcore-infra.deps.json
+M:\myfinance-aspnetcore\4-myfinance-aspnetcore-infra\bin\Debug\net8.0\4-myfinance-aspnetcore-infra.dll
+M:\myfinance-aspnetcore\4-myfinance-aspnetcore-infra\bin\Debug\net8.0\4-myfinance-aspnetcore-infra.pdb
+M:\myfinance-aspnetcore\4-myfinance-aspnetcore-infra\obj\Debug\net8.0\4-myfinance-aspnetcore-infra.GeneratedMSBuildEditorConfig.editorconfig
+M:\myfinance-aspnetcore\4-myfinance-aspnetcore-infra\obj\Debug\net8.0\4-myfinance-aspnetcore-infra.AssemblyInfoInputs.cache
+M:\myfinance-aspnetcore\4-myfinance-aspnetcore-infra\obj\Debug\net8.0\4-myfinance-aspnetcore-infra.AssemblyInfo.cs
+M:\myfinance-aspnetcore\4-myfinance-aspnetcore-infra\obj\Debug\net8.0\4-myfinance-aspnetcore-infra.csproj.CoreCompileInputs.cache
+M:\myfinance-aspnetcore\4-myfinance-aspnetcore-infra\obj\Debug\net8.0\4-myfinance-aspnetcore-infra.sourcelink.json
+M:\myfinance-aspnetcore\4-myfinance-aspnetcore-infra\obj\Debug\net8.0\4-myfinance-aspnetcore-infra.dll
+M:\myfinance-aspnetcore\4-myfinance-aspnetcore-infra\obj\Debug\net8.0\refint\4-myfinance-aspnetcore-infra.dll
+M:\myfinance-aspnetcore\4-myfinance-aspnetcore-infra\obj\Debug\net8.0\4-myfinance-aspnetcore-infra.pdb
+M:\myfinance-aspnetcore\4-myfinance-aspnetcore-infra\obj\Debug\net8.0\ref\4-myfinance-aspnetcore-infra.dll

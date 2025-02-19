@@ -1,14 +1,13 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
+    <RootNamespace>_2_myfinance_aspnetcore_service</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>myfinance_aspnetcore</RootNamespace>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\2-myfinance-aspnetcore-service\myfinance.csproj" />
     <ProjectReference Include="..\3-myfinance-aspnetcore-domain\myfinance.csproj" />
     <ProjectReference Include="..\4-myfinance-aspnetcore-infra\myfinance.csproj" />
   </ItemGroup>

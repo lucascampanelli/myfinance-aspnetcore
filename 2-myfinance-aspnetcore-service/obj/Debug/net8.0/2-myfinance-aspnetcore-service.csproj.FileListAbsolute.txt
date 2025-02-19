@@ -1,0 +1,12 @@
+M:\myfinance-aspnetcore\2-myfinance-aspnetcore-service\bin\Debug\net8.0\2-myfinance-aspnetcore-service.deps.json
+M:\myfinance-aspnetcore\2-myfinance-aspnetcore-service\bin\Debug\net8.0\2-myfinance-aspnetcore-service.dll
+M:\myfinance-aspnetcore\2-myfinance-aspnetcore-service\bin\Debug\net8.0\2-myfinance-aspnetcore-service.pdb
+M:\myfinance-aspnetcore\2-myfinance-aspnetcore-service\obj\Debug\net8.0\2-myfinance-aspnetcore-service.GeneratedMSBuildEditorConfig.editorconfig
+M:\myfinance-aspnetcore\2-myfinance-aspnetcore-service\obj\Debug\net8.0\2-myfinance-aspnetcore-service.AssemblyInfoInputs.cache
+M:\myfinance-aspnetcore\2-myfinance-aspnetcore-service\obj\Debug\net8.0\2-myfinance-aspnetcore-service.AssemblyInfo.cs
+M:\myfinance-aspnetcore\2-myfinance-aspnetcore-service\obj\Debug\net8.0\2-myfinance-aspnetcore-service.csproj.CoreCompileInputs.cache
+M:\myfinance-aspnetcore\2-myfinance-aspnetcore-service\obj\Debug\net8.0\2-myfinance-aspnetcore-service.sourcelink.json
+M:\myfinance-aspnetcore\2-myfinance-aspnetcore-service\obj\Debug\net8.0\2-myfinance-aspnetcore-service.dll
+M:\myfinance-aspnetcore\2-myfinance-aspnetcore-service\obj\Debug\net8.0\refint\2-myfinance-aspnetcore-service.dll
+M:\myfinance-aspnetcore\2-myfinance-aspnetcore-service\obj\Debug\net8.0\2-myfinance-aspnetcore-service.pdb
+M:\myfinance-aspnetcore\2-myfinance-aspnetcore-service\obj\Debug\net8.0\ref\2-myfinance-aspnetcore-service.dll
