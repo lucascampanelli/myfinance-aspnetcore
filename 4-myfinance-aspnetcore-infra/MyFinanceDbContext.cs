@@ -13,11 +13,20 @@ public class MyFinanceDbContext : DbContext
     // Atributo para mapear a tabela Transacao
     public DbSet<Transacao> Transacao { get; set; }
 
+    private string _caminhoDB;
+
+    public MyFinanceDbContext()
+    {
+        var pasta = Environment.SpecialFolder.LocalApplicationData;
+        var caminho = Environment.GetFolderPath(pasta);
+        
+        this._caminhoDB = System.IO.Path.Join(caminho, "myfinance.db");
+    }
 
     // Método sobrescrito para configurar o banco de dados
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlite("Data Source=myfinance.db");
+        optionsBuilder.UseSqlite($"Data Source={this._caminhoDB}");
     }
 
 }

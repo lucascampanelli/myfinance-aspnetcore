@@ -10,3 +10,9 @@ M:\myfinance-aspnetcore\2-myfinance-aspnetcore-service\obj\Debug\net8.0\2-myfina
 M:\myfinance-aspnetcore\2-myfinance-aspnetcore-service\obj\Debug\net8.0\refint\2-myfinance-aspnetcore-service.dll
 M:\myfinance-aspnetcore\2-myfinance-aspnetcore-service\obj\Debug\net8.0\2-myfinance-aspnetcore-service.pdb
 M:\myfinance-aspnetcore\2-myfinance-aspnetcore-service\obj\Debug\net8.0\ref\2-myfinance-aspnetcore-service.dll
+M:\myfinance-aspnetcore\2-myfinance-aspnetcore-service\bin\Debug\net8.0\3-myfinance-aspnetcore-domain.dll
+M:\myfinance-aspnetcore\2-myfinance-aspnetcore-service\bin\Debug\net8.0\4-myfinance-aspnetcore-infra.dll
+M:\myfinance-aspnetcore\2-myfinance-aspnetcore-service\bin\Debug\net8.0\3-myfinance-aspnetcore-domain.pdb
+M:\myfinance-aspnetcore\2-myfinance-aspnetcore-service\bin\Debug\net8.0\4-myfinance-aspnetcore-infra.pdb
+M:\myfinance-aspnetcore\2-myfinance-aspnetcore-service\obj\Debug\net8.0\2-myfinance-aspnetcore-service.csproj.AssemblyReference.cache
+M:\myfinance-aspnetcore\2-myfinance-aspnetcore-service\obj\Debug\net8.0\2-myfinance-aspnetcore-service.csproj.CopyComplete

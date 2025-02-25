@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\3-myfinance-aspnetcore-domain\myfinance.csproj" />
-    <ProjectReference Include="..\4-myfinance-aspnetcore-infra\myfinance.csproj" />
+    <ProjectReference Include="..\3-myfinance-aspnetcore-domain\3-myfinance-aspnetcore-domain.csproj" />
+    <ProjectReference Include="..\4-myfinance-aspnetcore-infra\4-myfinance-aspnetcore-infra.csproj" />
   </ItemGroup>
 
 </Project>

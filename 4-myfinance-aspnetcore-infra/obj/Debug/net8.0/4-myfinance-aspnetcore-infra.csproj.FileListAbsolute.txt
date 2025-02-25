@@ -11,3 +11,8 @@ M:\myfinance-aspnetcore\4-myfinance-aspnetcore-infra\obj\Debug\net8.0\refint\4-m
 M:\myfinance-aspnetcore\4-myfinance-aspnetcore-infra\obj\Debug\net8.0\4-myfinance-aspnetcore-infra.pdb
 M:\myfinance-aspnetcore\4-myfinance-aspnetcore-infra\obj\Debug\net8.0\ref\4-myfinance-aspnetcore-infra.dll
 M:\myfinance-aspnetcore\4-myfinance-aspnetcore-infra\obj\Debug\net8.0\4-myfinance-aspnetcore-infra.csproj.AssemblyReference.cache
+M:\myfinance-aspnetcore\4-myfinance-aspnetcore-infra\bin\Debug\net8.0\4-myfinance-aspnetcore-infra.runtimeconfig.json
+M:\myfinance-aspnetcore\4-myfinance-aspnetcore-infra\bin\Debug\net8.0\3-myfinance-aspnetcore-domain.dll
+M:\myfinance-aspnetcore\4-myfinance-aspnetcore-infra\bin\Debug\net8.0\3-myfinance-aspnetcore-domain.pdb
+M:\myfinance-aspnetcore\4-myfinance-aspnetcore-infra\obj\Debug\net8.0\4-myfinance-aspnetcore-infra.csproj.CopyComplete
+M:\myfinance-aspnetcore\4-myfinance-aspnetcore-infra\obj\Debug\net8.0\4-myfinance-aspnetcore-infra.genruntimeconfig.cache

@@ -1,7 +1,16 @@
+using myfinance_aspnetcore_infra;
+
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+
+// Adicionando o serviço de contexto do banco de dados do Entity Framework
+builder.Services.AddDbContext<MyFinanceDbContext>();
+
 
 // Constrói p contêiner da aplicação
 var app = builder.Build();

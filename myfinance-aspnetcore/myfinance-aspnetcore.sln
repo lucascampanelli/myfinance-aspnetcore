@@ -1,8 +1,15 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myfinance-aspnetcore", "myfinance-aspnetcore.csproj", "{49F11443-4F79-64B6-80CF-9B2B5B04DF58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-myfinance-aspnetcore-service", "..\2-myfinance-aspnetcore-service\2-myfinance-aspnetcore-service.csproj", "{96108D9B-BB25-4EA0-BFA5-EA210D66AC71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3-myfinance-aspnetcore-domain", "..\3-myfinance-aspnetcore-domain\3-myfinance-aspnetcore-domain.csproj", "{65672435-7896-4F44-8EB0-FC7D3A0B53D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-myfinance-aspnetcore-infra", "..\4-myfinance-aspnetcore-infra\4-myfinance-aspnetcore-infra.csproj", "{5F39CAA9-1328-41C2-A3E0-576325E76D35}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,6 +21,18 @@ Global
 		{49F11443-4F79-64B6-80CF-9B2B5B04DF58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49F11443-4F79-64B6-80CF-9B2B5B04DF58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49F11443-4F79-64B6-80CF-9B2B5B04DF58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96108D9B-BB25-4EA0-BFA5-EA210D66AC71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96108D9B-BB25-4EA0-BFA5-EA210D66AC71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96108D9B-BB25-4EA0-BFA5-EA210D66AC71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96108D9B-BB25-4EA0-BFA5-EA210D66AC71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65672435-7896-4F44-8EB0-FC7D3A0B53D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65672435-7896-4F44-8EB0-FC7D3A0B53D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65672435-7896-4F44-8EB0-FC7D3A0B53D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65672435-7896-4F44-8EB0-FC7D3A0B53D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F39CAA9-1328-41C2-A3E0-576325E76D35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F39CAA9-1328-41C2-A3E0-576325E76D35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F39CAA9-1328-41C2-A3E0-576325E76D35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F39CAA9-1328-41C2-A3E0-576325E76D35}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
