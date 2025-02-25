@@ -6,27 +6,27 @@ using myfinance_aspnetcore_infra;
 
 namespace myfinance_aspnetcore_service;
 
-public class PlanoContaService : IPlanoContaService
+public class TransacaoService : ITransacaoService
 {
 
     // Contexto do banco de dados do Entity Framework
     private readonly MyFinanceDbContext contextoBD;
 
     // Construtor com a injenção de dependência do contexto do banco de dados
-    public PlanoContaService(MyFinanceDbContext contextoBD)
+    public TransacaoService(MyFinanceDbContext contextoBD)
     {
         this.contextoBD = contextoBD;
     }
 
 
     /// <summary>
-    ///     Método para cadastrar um plano de conta
+    ///     Método para cadastrar uma transação
     /// </summary>
     /// <param name="entidade"></param>
-    public void Cadastrar(PlanoConta entidade)
+    public void Cadastrar(Transacao entidade)
     {
-        // Obtendo o mapeamento da entidade PlanoConta
-        var dbSet = this.contextoBD.PlanoConta;
+        // Obtendo o mapeamento da entidade Transacao
+        var dbSet = this.contextoBD.Transacao;
 
         // Verificando se a entidade recebida é nova
         if (entidade.Id == null)
@@ -45,36 +45,36 @@ public class PlanoContaService : IPlanoContaService
 
 
     /// <summary>
-    ///     Método responsavel por excluir um plano de conta
+    ///     Método responsavel por excluir uma transação pelo id
     /// </summary>
     /// <param name="id"></param>
     /// <exception cref="NotImplementedException"></exception> 
     public void Excluir(int id)
     {
-        PlanoConta planoContaParaExcluir = new PlanoConta { Id = id };
+        Transacao transacaoParaExcluir = new Transacao { Id = id };
 
-        this.contextoBD.PlanoConta.Remove(planoContaParaExcluir);
+        this.contextoBD.Transacao.Remove(transacaoParaExcluir);
         
         this.contextoBD.SaveChanges();
     }
 
 
     /// <summary>
-    ///    Método responsável por listar todos os planos de conta
+    ///    Método responsável por listar todas as transações
     /// </summary>
     /// <returns></returns>
-    public List<PlanoConta> ListarRegistros()
+    public List<Transacao> ListarRegistros()
     {
-        return this.contextoBD.PlanoConta.ToList();
+        return this.contextoBD.Transacao.ToList();
     }
 
 
     /// <summary>
-    ///    Método responsável por retornar um plano de conta pelo id
+    ///    Método responsável por retornar uma transação pelo id
     /// </summary>
     /// <param name="id"></param>
-    public PlanoConta RetornarRegistro(int id)
+    public Transacao RetornarRegistro(int id)
     {
-        return this.contextoBD.PlanoConta.Where(x => x.Id == id).First();
+        return this.contextoBD.Transacao.Where(x => x.Id == id).First();
     }
 }
