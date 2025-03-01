@@ -17,6 +17,10 @@ builder.Services.AddDbContext<MyFinanceDbContext>();
 // mapeando a interface IPlanoContaService para a classe PlanoContaService
 builder.Services.AddScoped<IPlanoContaService, PlanoContaService>();
 
+// Adiciona o serviço de Transação que será injetado no controller
+// mapeando a interface ITransacaoService
+builder.Services.AddScoped<ITransacaoService, TransacaoService>();
+
 
 // Constrói p contêiner da aplicação
 var app = builder.Build();
