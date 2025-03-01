@@ -17,6 +17,8 @@ namespace myfinance_aspnetcore.Controllers
             _logger = logger;
         }
 
+        [HttpGet]
+        [Route("Index")]
         public IActionResult Index()
         {
             return View();
