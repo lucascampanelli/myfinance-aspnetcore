@@ -1,4 +1,6 @@
 using myfinance_aspnetcore_infra;
+using myfinance_aspnetcore_service;
+using myfinance_aspnetcore_service.Interfaces;
 
 
 
@@ -10,6 +12,10 @@ builder.Services.AddControllersWithViews();
 
 // Adicionando o serviço de contexto do banco de dados do Entity Framework
 builder.Services.AddDbContext<MyFinanceDbContext>();
+
+// Adiciona o serviço de Plano de Conta que será injetado no controller
+// mapeando a interface IPlanoContaService para a classe PlanoContaService
+builder.Services.AddScoped<IPlanoContaService, PlanoContaService>();
 
 
 // Constrói p contêiner da aplicação

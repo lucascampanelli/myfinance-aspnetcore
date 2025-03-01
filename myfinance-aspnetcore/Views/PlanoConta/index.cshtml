@@ -1,8 +1,15 @@
+@{
+    ViewData["Title"] = "Plano de Contas";
+}
+
+
+
 <h1>Plano de Contas</h1>
 
 <button type="button"class="btn btn-block btn-primary" onclick="Novo()">
     Criar item de Plano de Conta
 </button>
+<br><br>
 
 <table class="table table-bordered">
     <tr>
@@ -14,7 +21,7 @@
     </tr>
 
     @{
-        foreach (var item in (List<PlanoConta>)ViewBag.ListaPlanoConta])
+        foreach (var item in (List<PlanoContaModel>)ViewBag.ListaPlanoConta)
         {
             <tr>
                 <td>@item.Id</td>
