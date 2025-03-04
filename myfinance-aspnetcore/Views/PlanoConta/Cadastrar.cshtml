@@ -1,0 +1,39 @@
+@model myfinance_aspnetcore.Models.PlanoContaModel;
+
+@{
+    ViewData["Title"] = "Criar Plano de Contas";
+}
+
+
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+
+    <form asp-controller="PlanoConta" asp-action="Cadastrar" method="post">
+        <input type="hidden" asp-for="Id" />
+
+        <div class="form-group">
+            <label asp-for="Descricao"></label>
+            <input type="text" asp-for="Descricao" class="form-control" />
+            <span asp-validation-for="Descricao" class="text-danger"></span>
+        </div>
+
+        <br>
+
+        <div class="form-group">
+            <label asp-for="Tipo"></label>
+            <select asp-for="Tipo" class="form-control">
+                <option value="D">Despesa</option>
+                <option value="R">Receita</option>
+            </select>
+            <span asp-validation-for="Tipo" class="text-danger"></span>
+        </div>
+
+        <br>
+        <br>
+
+        <button type="submit" class="btn btn-primary">Registrar</button>
+    </form>
+
+</div>

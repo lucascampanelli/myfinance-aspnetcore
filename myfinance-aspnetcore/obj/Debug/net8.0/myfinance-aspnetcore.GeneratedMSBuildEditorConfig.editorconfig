@@ -26,8 +26,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[M:/myfinance-aspnetcore/myfinance-aspnetcore/Views/PlanoConta/index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbm9Db250YVxpbmRleC5jc2h0bWw=
+[M:/myfinance-aspnetcore/myfinance-aspnetcore/Views/PlanoConta/Cadastrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbm9Db250YVxDYWRhc3RyYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[M:/myfinance-aspnetcore/myfinance-aspnetcore/Views/PlanoConta/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbm9Db250YVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [M:/myfinance-aspnetcore/myfinance-aspnetcore/Views/Shared/Error.cshtml]
