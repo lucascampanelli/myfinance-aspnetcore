@@ -1,6 +1,7 @@
 using myfinance_aspnetcore_service.Interfaces;
 using myfinance_aspnetcore_domain.Entities;
 using myfinance_aspnetcore_infra;
+using Microsoft.EntityFrameworkCore;
 
 
 
@@ -65,7 +66,7 @@ public class TransacaoService : ITransacaoService
     /// <returns></returns>
     public List<Transacao> ListarRegistros()
     {
-        return this.contextoBD.Transacao.ToList();
+        return this.contextoBD.Transacao.Include(x => x.PlanoConta).ToList();
     }
 
 
@@ -75,6 +76,6 @@ public class TransacaoService : ITransacaoService
     /// <param name="id"></param>
     public Transacao RetornarRegistro(int id)
     {
-        return this.contextoBD.Transacao.Where(x => x.Id == id).First();
+        return this.contextoBD.Transacao.Include(x => x.PlanoConta).Where(x => x.Id == id).First();
     }
 }
