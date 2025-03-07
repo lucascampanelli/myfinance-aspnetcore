@@ -1,4 +1,4 @@
-using myfinance_aspnetcore_domain.Entities;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace myfinance_aspnetcore.Models;
 
@@ -10,5 +10,5 @@ public class TransacaoModel
     public decimal Valor { get; set; }
     public string Tipo { get; set; }
     public int PlanoContaId { get; set; }
-    public PlanoConta PlanoConta { get; set; }
+    public IEnumerable<SelectListItem>? ListaPlanoContas { get; set; }
 }

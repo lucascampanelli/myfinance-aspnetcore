@@ -1,7 +1,7 @@
-@model myfinance_aspnetcore.Models.PlanoContaModel;
+@model myfinance_aspnetcore.Models.TransacaoModel;
 
 @{
-    ViewData["Title"] = "Criar Plano de Contas";
+    ViewData["Title"] = "Registrar Transação Financeira";
 }
 
 
@@ -10,30 +10,43 @@
 
 <div>
 
-    <form asp-controller="PlanoConta" asp-action="Cadastrar" method="post">
+    <form asp-controller="Transacao" asp-action="Cadastrar" method="post">
         <input type="hidden" asp-for="Id" />
 
         <div class="form-group">
-            <label asp-for="Descricao"></label>
-            <input type="text" asp-for="Descricao" class="form-control" />
-            <span asp-validation-for="Descricao" class="text-danger"></span>
+            <label asp-for="Data" class="control-label"></label>
+            <input asp-for="Data" class="form-control" type="date" />
+            <span asp-validation-for="Data" class="text-danger"></span>
         </div>
-
-        <br>
 
         <div class="form-group">
-            <label asp-for="Tipo"></label>
-            <select asp-for="Tipo" class="form-control">
-                <option value="D">Despesa</option>
-                <option value="R">Receita</option>
-            </select>
-            <span asp-validation-for="Tipo" class="text-danger"></span>
+            <label asp-for="Valor" class="control-label"></label>
+            <input asp-for="Valor" class="form-control" type="text" step="0.01"/>
+            <span asp-validation-for="Valor" class="text-danger"></span>
+        </div>
+
+        <div class-"form-group">
+            <label asp-for="PlanoContaId" class="control-label">Plano de Conta</label>
+
+
+            @* O PlanoContaId da model deve ser o índice *@
+            @Html.DropDownListFor(model => model.PlanoContaId, Model.ListaPlanoContas, "Selecione", new { @class = "form-control" })
+
+
+            <span asp-validation-for="PlanoContaId" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Historico" class="control-label"></label>
+            <input asp-for="Historico" class="form-control" type="text"/>
+            <span asp-validation-for="Historico" class="text-danger"></span>
         </div>
 
         <br>
-        <br>
+        </br>
 
         <button type="submit" class="btn btn-primary">Registrar</button>
+
     </form>
 
 </div>

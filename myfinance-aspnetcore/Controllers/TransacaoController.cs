@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using myfinance_aspnetcore.Models;
 using myfinance_aspnetcore_domain.Entities;
 using myfinance_aspnetcore_service.Interfaces;
@@ -13,14 +14,17 @@ namespace myfinance_aspnetcore.Controllers
     {
 
         private readonly ILogger<TransacaoController> _logger;
+        private readonly IPlanoContaService _planoContaService;
         private readonly ITransacaoService _transacaoService;
 
         public TransacaoController(
                                     ILogger<TransacaoController> logger,
+                                    IPlanoContaService planoContaService,
                                     ITransacaoService transacaoService
         )
         {
             _logger = logger;
+            _planoContaService = planoContaService;
             _transacaoService = transacaoService;
         }
 
@@ -43,8 +47,7 @@ namespace myfinance_aspnetcore.Controllers
                     Data = item.Data,
                     Valor = item.Valor,
                     Tipo = item.PlanoConta.Tipo,
-                    PlanoContaId = item.PlanoContaId,
-                    PlanoConta = item.PlanoConta
+                    PlanoContaId = item.PlanoContaId
                 });
             }
 
@@ -60,25 +63,32 @@ namespace myfinance_aspnetcore.Controllers
         [Route("Cadastrar/{id}")]
         public IActionResult Cadastrar(int? id)
         {
+            // Cria uma lista para o dropdown, definind que o valor é o Id e a descrição é a Descrição
+            var listaPlanoContas = new SelectList(_planoContaService.ListarRegistros(), "Id", "Descricao");
+
+            var itemTransacao = new TransacaoModel
+            {
+                Data = DateTime.Now,
+                ListaPlanoContas = listaPlanoContas
+            };
+
             // Se o Id for nulo, então é um novo registro
             if (id == null)
-                return View();
+                return View(itemTransacao);
 
 
             var transacao = _transacaoService.RetornarRegistro((int)id);
 
-            var TransacaoModel = new TransacaoModel
-            {
-                Id = transacao.Id,
-                Historico = transacao.Historico,
-                Data = transacao.Data,
-                Valor = transacao.Valor,
-                Tipo = transacao.PlanoConta.Tipo,
-                PlanoContaId = transacao.PlanoContaId,
-                PlanoConta = transacao.PlanoConta
-            };
 
-            return View(TransacaoModel);
+            itemTransacao.Id = transacao.Id;
+            itemTransacao.Historico = transacao.Historico;
+            itemTransacao.Data = transacao.Data;
+            itemTransacao.Valor = transacao.Valor;
+            itemTransacao.Tipo = transacao.PlanoConta.Tipo;
+            itemTransacao.PlanoContaId = transacao.PlanoContaId;
+
+
+            return View(itemTransacao);
         }
 
         [HttpPost]
@@ -94,8 +104,7 @@ namespace myfinance_aspnetcore.Controllers
                 Historico = model.Historico,
                 Data = model.Data,
                 Valor = model.Valor,
-                PlanoContaId = model.PlanoContaId,
-                PlanoConta = model.PlanoConta
+                PlanoContaId = model.PlanoContaId
             };
 
             // Se o Id for igual a zero, então é um novo registro.
