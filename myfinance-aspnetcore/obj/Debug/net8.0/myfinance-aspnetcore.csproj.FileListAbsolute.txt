@@ -81,3 +81,4 @@ M:\myfinance-aspnetcore\myfinance-aspnetcore\bin\Debug\net8.0\2-myfinance-aspnet
 M:\myfinance-aspnetcore\myfinance-aspnetcore\bin\Debug\net8.0\3-myfinance-aspnetcore-domain.pdb
 M:\myfinance-aspnetcore\myfinance-aspnetcore\bin\Debug\net8.0\4-myfinance-aspnetcore-infra.pdb
 M:\myfinance-aspnetcore\myfinance-aspnetcore\obj\Debug\net8.0\myfinance-aspnetcore.csproj.CopyComplete
+M:\myfinance-aspnetcore\myfinance-aspnetcore\bin\Debug\net8.0\appsettings.Production.json

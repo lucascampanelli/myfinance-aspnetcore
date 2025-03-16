@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("myfinance-aspnetcore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0322b0233bd166cd8be03a97a0009570f8c793cd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f4500fe9cb48977ef9f4b8621367c348ce3eef8")]
 [assembly: System.Reflection.AssemblyProductAttribute("myfinance-aspnetcore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("myfinance-aspnetcore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

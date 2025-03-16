@@ -1,4 +1,6 @@
 using myfinance_aspnetcore_infra;
+using myfinance_aspnetcore_infra.Interfaces;
+using myfinance_aspnetcore_infra.Repositories;
 using myfinance_aspnetcore_service;
 using myfinance_aspnetcore_service.Interfaces;
 
@@ -20,6 +22,11 @@ builder.Services.AddScoped<IPlanoContaService, PlanoContaService>();
 // Adiciona o serviço de Transação que será injetado no controller
 // mapeando a interface ITransacaoService
 builder.Services.AddScoped<ITransacaoService, TransacaoService>();
+
+
+// Adiciona o repositorio de Plano de Conta que será injetado no serviço
+// mapeando a interface IPlanoContaRepository para a classe PlanoContaRepository
+builder.Services.AddScoped<IPlanoContaRepository, PlanoContaRepository>();
 
 
 // Constrói p contêiner da aplicação
